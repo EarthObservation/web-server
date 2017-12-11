@@ -1,0 +1,11 @@
+
+#
+# Development configuration of dependent services for Docker Compose.
+#
+postgresql:
+    image: postgres:10.1
+    environment:
+        POSTGRES_USER: map_management
+        POSTGRES_DB: map_management
+    ports:
+        - "55432:5432"
