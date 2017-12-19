@@ -1,7 +1,7 @@
 from django.conf.urls import url
 
-from . import views
+from .views import UserMaps
 
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
+    url(r'^$', UserMaps.as_view(), name='index'),
 ]
