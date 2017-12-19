@@ -15,7 +15,7 @@ sftp-config.json
 *.py[cod]
 *.so
 *.dll
-
+    
 # Ignore files created by setup.py.
 build/
 dist/
