@@ -5,6 +5,7 @@ from .models import UserMap, GroupMap
 from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import View
 from jwt_auth.mixins import JSONWebTokenAuthMixin
+from. models import UserProfile
 
 
 class UserMaps(JSONWebTokenAuthMixin, View):
