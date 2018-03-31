@@ -1,4 +1,4 @@
-# Ignore temporary editor files.
+# Ignore temporary editor files
 .*.sw[po]
 *~
 .DS_Store
@@ -11,12 +11,16 @@ sftp-config.json
 .idea
 .vscode
 
-# Ignore binaries.
+# Ignore binaries
 *.py[cod]
 *.so
 *.dll
 
-# Ignore files created by setup.py.
+# Ignore media and static files
+/media
+/static
+
+# Ignore files created by setup.py
 build/
 dist/
 MANIFEST
