@@ -20,6 +20,9 @@ sftp-config.json
 /media
 /static
 
+# Ignore Python virtual environment files
+/venv
+
 # Ignore files created by setup.py
 build/
 dist/
