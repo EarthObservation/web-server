@@ -3,7 +3,7 @@
 # Development configuration of dependent services for Docker Compose.
 #
 postgresql:
-    image: postgres:10.1
+    image: postgres:9.5
     environment:
         POSTGRES_USER: map_management
         POSTGRES_DB: map_management
