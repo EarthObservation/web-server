@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'allauth',
     'allauth.account',
+    'allauth.socialaccount',
     'rest_auth.registration',
 
     'map_management',
@@ -152,8 +153,6 @@ REST_FRAMEWORK = {
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-AUTH_PROFILE_MODULE = 'map_management.UserProfile'
-
 CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ALLOW_HEADERS = (
@@ -173,5 +172,3 @@ ACCOUNT_USERNAME_REQUIRED = False
 REST_AUTH_REGISTER_SERIALIZERS = {
     'REGISTER_SERIALIZER': 'map_management.serializers.MyRegisterSerializer',
 }
-
-AUTH_PROFILE_MODULE = 'map_management.UserProfile'

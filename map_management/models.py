@@ -16,13 +16,3 @@ class UserMap(models.Model):
 class GroupMap(models.Model):
     group = models.ForeignKey(Group, on_delete=models.CASCADE)
     map_title = models.CharField(max_length=50)
-
-@receiver(post_save, sender=User)
-def create_user_profile(sender, instance, created, **kwargs):
-    """Create the UserProfile when a new User is saved"""
-    if created:
-        UserProfile.objects.create(user=instance)
-
-@receiver(post_save, sender=User)
-def save_user_profile(sender, instance, **kwargs):
-    instance.userprofile.save()
